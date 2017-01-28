@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="budget.Controller">
+   <top>
+       <Button mnemonicParsing="false" onAction="#handleLoadButton" text="Load" />
+   </top>
+   <center>
+      <TableView fx:id="dataTable" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <TextField BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
